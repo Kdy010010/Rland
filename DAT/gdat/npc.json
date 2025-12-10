@@ -1,0 +1,60 @@
+[
+  {
+    "id": "plaza_merchant",
+    "name": "잡화상 로잘리",
+    "mapId": "plaza",
+    "x": 4,
+    "y": 8,
+    "type": "shop",
+    "dialog": [
+      "어서 와요, 여행자님.",
+      "회복 물약과 간단한 스킬서를 팔고 있어요."
+    ],
+    "merchandise": [
+      { "itemId": "potion_small", "price": 15 },
+      { "itemId": "herb_small", "price": 8 },
+      { "itemId": "skillbook_heal_light", "price": 120 }
+    ]
+  },
+  {
+    "id": "plaza_bard",
+    "name": "광장 음유시인",
+    "mapId": "plaza",
+    "x": 10,
+    "y": 8,
+    "type": "talk",
+    "dialog": [
+      "이 나라는 한때 진정한 낭만으로 가득했지.",
+      "지하 낭만서고에 아직 그 잔향이 남아있다는 소문이 있어."
+    ]
+  },
+  {
+    "id": "forest_merchant",
+    "name": "숲속 행상인",
+    "mapId": "mist_forest",
+    "x": 2,
+    "y": 13,
+    "type": "shop",
+    "dialog": [
+      "숲은 위험하니 준비를 단단히 하는 게 좋지.",
+      "도적이라면 이곳에서 배울 수 있는 기술도 있어."
+    ],
+    "merchandise": [
+      { "itemId": "potion_small", "price": 18 },
+      { "itemId": "skillbook_shadow_step", "price": 200 },
+      { "itemId": "skillbook_pickpocket", "price": 220 }
+    ]
+  },
+  {
+    "id": "ruins_scholar",
+    "name": "폐허의 학자",
+    "mapId": "clockwork_ruins",
+    "x": 13,
+    "y": 2,
+    "type": "talk",
+    "dialog": [
+      "톱니가 멈춘 순간, 이 도시의 시간도 함께 멈추었지.",
+      "하지만 누군가는 여전히 시계를 되돌리고 싶어해."
+    ]
+  }
+]

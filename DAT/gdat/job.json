@@ -1,0 +1,45 @@
+[
+  {
+    "id": "novice",
+    "name": "방랑자",
+    "description": "아직 세상에 발을 내디딘 초보 모험가입니다.",
+    "hidden": false
+  },
+  {
+    "id": "warrior",
+    "name": "검성",
+    "description": "강력한 일격과 튼튼한 육체를 자랑하는 전사.",
+    "hidden": false
+  },
+  {
+    "id": "mage",
+    "name": "마도사",
+    "description": "원소의 힘을 다루는 마법사.",
+    "hidden": false
+  },
+  {
+    "id": "priest",
+    "name": "성가대",
+    "description": "노래와 기도로 동료를 치유하고 보호합니다.",
+    "hidden": false
+  },
+  {
+    "id": "rogue",
+    "name": "도적",
+    "description": "그림자 속에서 움직이며, 회피와 훔치기에 능합니다.",
+    "hidden": false
+  },
+  {
+    "id": "bard",
+    "name": "시인",
+    "description": "노래로 버프와 디버프를 다루는 예술가.",
+    "hidden": false
+  },
+  {
+    "id": "admin",
+    "name": "낭만의 지배자",
+    "description": "운영자 전용 직업입니다.",
+    "hidden": true,
+    "unlockCode": "ROMANCE_OP"
+  }
+]

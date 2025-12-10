@@ -1,0 +1,128 @@
+[
+  {
+    "id": "green_slime",
+    "name": "초록 슬라임",
+    "baseHp": 40,
+    "attack": 6,
+    "exp": 8,
+    "goldMin": 3,
+    "goldMax": 8,
+    "dropItems": [
+      { "itemId": "herb_small", "chance": 0.3 }
+    ]
+  },
+  {
+    "id": "wild_rabbit",
+    "name": "야생 토끼",
+    "baseHp": 28,
+    "attack": 5,
+    "exp": 6,
+    "goldMin": 2,
+    "goldMax": 6,
+    "dropItems": [
+      { "itemId": "meat_rabbit", "chance": 0.35 }
+    ]
+  },
+  {
+    "id": "forest_wolf",
+    "name": "숲의 늑대",
+    "baseHp": 75,
+    "attack": 14,
+    "exp": 20,
+    "goldMin": 10,
+    "goldMax": 20,
+    "dropItems": [
+      { "itemId": "potion_small", "chance": 0.25 },
+      { "itemId": "skillbook_shadow_step", "chance": 0.05 }
+    ]
+  },
+  {
+    "id": "lost_spirit",
+    "name": "길 잃은 영혼",
+    "baseHp": 60,
+    "attack": 12,
+    "exp": 22,
+    "goldMin": 12,
+    "goldMax": 24,
+    "dropItems": [
+      { "itemId": "skillbook_burning_mark", "chance": 0.05 }
+    ]
+  },
+  {
+    "id": "gear_golem",
+    "name": "기어 골렘",
+    "baseHp": 110,
+    "attack": 20,
+    "exp": 40,
+    "goldMin": 25,
+    "goldMax": 40,
+    "dropItems": [
+      { "itemId": "rusty_sword", "chance": 0.2 },
+      { "itemId": "iron_armor", "chance": 0.1 }
+    ]
+  },
+  {
+    "id": "rust_specter",
+    "name": "녹슨 망령",
+    "baseHp": 90,
+    "attack": 18,
+    "exp": 38,
+    "goldMin": 22,
+    "goldMax": 38,
+    "dropItems": [
+      { "itemId": "skillbook_time_lock", "chance": 0.05 }
+    ]
+  },
+  {
+    "id": "abyss_warden",
+    "name": "심연의 사서",
+    "baseHp": 180,
+    "attack": 30,
+    "exp": 100,
+    "goldMin": 80,
+    "goldMax": 120,
+    "dropItems": [
+      { "itemId": "skillbook_mass_heal", "chance": 0.08 },
+      { "itemId": "skillbook_blood_pact", "chance": 0.08 }
+    ]
+  },
+  {
+    "id": "inky_phantom",
+    "name": "먹물 망령",
+    "baseHp": 150,
+    "attack": 26,
+    "exp": 90,
+    "goldMin": 70,
+    "goldMax": 110,
+    "dropItems": [
+      { "itemId": "skillbook_pickpocket", "chance": 0.1 }
+    ]
+  },
+[
+  {
+    "id": "godungu",
+    "name": "고등어",
+    "baseHp": 60,
+    "attack": 8,
+    "exp": 12,
+    "goldMin": 5,
+    "goldMax": 10,
+    "dropItems": [
+      { "itemId": "fish_godungu", "chance": 0.6 }
+    ]
+  },
+  {
+    "id": "daegu",
+    "name": "대구",
+    "baseHp": 90,
+    "attack": 10,
+    "exp": 20,
+    "goldMin": 7,
+    "goldMax": 15,
+    "dropItems": [
+      { "itemId": "fish_daegu", "chance": 0.5 }
+    ]
+  }
+]
+
+]

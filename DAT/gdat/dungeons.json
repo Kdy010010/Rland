@@ -1,0 +1,59 @@
+[
+  {
+    "id": "training_fields",
+    "name": "낭만의 들판",
+    "mapId": "plaza",
+    "description": "광장 외곽의 잔디밭으로, 초보 몬스터들이 어슬렁거립니다.",
+    "maxMonsters": 4,
+    "monsters": [
+      { "id": "green_slime", "rate": 3 },
+      { "id": "wild_rabbit", "rate": 1 }
+    ]
+  },
+  {
+    "id": "mist_forest_core",
+    "name": "안개숲 심부",
+    "mapId": "mist_forest",
+    "description": "짙은 안개에 가려진 숲의 안쪽. 길 잃은 영혼들이 떠돕니다.",
+    "maxMonsters": 6,
+    "monsters": [
+      { "id": "forest_wolf", "rate": 3 },
+      { "id": "lost_spirit", "rate": 2 }
+    ]
+  },
+  {
+    "id": "clockwork_ruins_core",
+    "name": "시계탑 폐허",
+    "mapId": "clockwork_ruins",
+    "description": "멈춰버린 거대한 톱니바퀴 사이로 요괴들이 숨어 있습니다.",
+    "maxMonsters": 6,
+    "monsters": [
+      { "id": "gear_golem", "rate": 2 },
+      { "id": "rust_specter", "rate": 3 }
+    ]
+  },
+  {
+    "id": "abyss_hidden",
+    "name": "지하 낭만서고(히든)",
+    "mapId": "abyss_library",
+    "description": "세계의 끝에 있는 비밀 도서관. 진짜 낭만은 여기서 시작됩니다.",
+    "maxMonsters": 8,
+    "monsters": [
+      { "id": "abyss_warden", "rate": 2 },
+      { "id": "inky_phantom", "rate": 2 }
+    ]
+  },
+  {
+    "id": "fisherman",
+    "name": "낚시터",
+    "mapId": "fishing_porch",
+    "description": "물고기들이 출몰",
+    "maxMonsters": 6,
+    "monsters": [
+      { "id": "godungu", "rate": 3 },
+      { "id": "daegu", "rate": 2 }
+    ]
+}
+
+
+]

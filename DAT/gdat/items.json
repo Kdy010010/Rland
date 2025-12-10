@@ -1,0 +1,100 @@
+[
+  {
+    "id": "herb_small",
+    "name": "작은 약초",
+    "type": "consumable",
+    "description": "소량의 HP를 회복합니다.",
+    "healAmount": 20
+  },
+  {
+    "id": "meat_rabbit",
+    "name": "토끼 고기",
+    "type": "consumable",
+    "description": "허기를 달래고 HP를 약간 회복합니다.",
+    "healAmount": 25
+  },
+  {
+    "id": "potion_small",
+    "name": "작은 회복 물약",
+    "type": "consumable",
+    "description": "HP를 회복합니다.",
+    "healAmount": 35
+  },
+  {
+    "id": "rusty_sword",
+    "name": "녹슨 검",
+    "type": "weapon",
+    "description": "오래되어 성능은 좋지 않지만, 맨손보다는 낫습니다.",
+    "attackBonus": 5
+  },
+  {
+    "id": "iron_armor",
+    "name": "철 갑옷",
+    "type": "armor",
+    "description": "무겁지만 확실한 방어력을 제공합니다.",
+    "defenseBonus": 8
+  },
+  {
+    "id": "skillbook_heal_light",
+    "name": "스킬서: 가벼운 치유",
+    "type": "skillbook",
+    "description": "읽으면 '가벼운 치유' 스킬을 배울 수 있습니다.",
+    "skillId": "heal_light"
+  },
+  {
+    "id": "skillbook_burning_mark",
+    "name": "스킬서: 타오르는 낙인",
+    "type": "skillbook",
+    "description": "읽으면 '타오르는 낙인' 스킬을 배울 수 있습니다.",
+    "skillId": "burning_mark"
+  },
+  {
+    "id": "skillbook_shadow_step",
+    "name": "스킬서: 그림자 걷기",
+    "type": "skillbook",
+    "description": "읽으면 '그림자 걷기' 스킬을 배울 수 있습니다.",
+    "skillId": "shadow_step"
+  },
+  {
+    "id": "skillbook_time_lock",
+    "name": "스킬서: 시간 봉인",
+    "type": "skillbook",
+    "description": "읽으면 '시간 봉인' 스킬을 배울 수 있습니다.",
+    "skillId": "time_lock"
+  },
+  {
+    "id": "skillbook_blood_pact",
+    "name": "스킬서: 혈계의 서약",
+    "type": "skillbook",
+    "description": "읽으면 '혈계의 서약' 스킬을 배울 수 있습니다.",
+    "skillId": "blood_pact"
+  },
+  {
+    "id": "skillbook_pickpocket",
+    "name": "스킬서: 소매치기",
+    "type": "skillbook",
+    "description": "읽으면 '소매치기' 스킬을 배울 수 있습니다.",
+    "skillId": "pickpocket"
+  },
+  {
+    "id": "skillbook_mass_heal",
+    "name": "스킬서: 성가대 합창",
+    "type": "skillbook",
+    "description": "읽으면 '성가대 합창' 스킬을 배울 수 있습니다.",
+    "skillId": "mass_heal"
+  },
+  {
+    "id": "fish_godungu",
+    "name": "싱싱한 고등어",
+    "type": "consumable",
+    "description": "막 잡아 올린 듯한 고등어입니다.",
+    "healAmount": 15
+  },
+  {
+    "id": "fish_daegu",
+    "name": "탱탱한 대구",
+    "type": "consumable",
+    "description": "살이 통통하게 오른 대구입니다.",
+    "healAmount": 25
+  }
+]

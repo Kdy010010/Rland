@@ -1,0 +1,25 @@
+{
+  "startMap": "plaza",
+  "maps": [
+    {
+      "id": "plaza",
+      "name": "낭만의 광장",
+      "description": "모든 모험가가 처음 발을 딛는 곳. 중앙에는 오래된 분수가 있습니다."
+    },
+    {
+      "id": "mist_forest",
+      "name": "안개숲",
+      "description": "짙은 안개가 내려앉은 숲. 발자국마다 낙엽이 삐걱입니다."
+    },
+    {
+      "id": "clockwork_ruins",
+      "name": "시계장치 폐허",
+      "description": "멈춰버린 톱니와 시계태엽이 산처럼 쌓인 폐허."
+    },
+    {
+      "id": "abyss_library",
+      "name": "지하 낭만서고",
+      "description": "세계의 이야기가 잠든 비밀 도서관. 히든 맵입니다."
+    }
+  ]
+}

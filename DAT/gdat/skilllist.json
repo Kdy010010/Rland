@@ -1,0 +1,169 @@
+[
+  {
+    "id": "smash",
+    "name": "강타",
+    "description": "힘을 실어 적을 강하게 내려칩니다.",
+    "mpCost": 3,
+    "allowedJobs": ["novice", "warrior", "mage", "priest", "rogue", "bard", "admin"],
+    "effectText": "강력한 일격이 적에게 꽂힙니다!",
+    "effect": {
+      "kind": "attack",
+      "value": 25
+    },
+    "unlock": {
+      "minLevel": 1
+    }
+  },
+  {
+    "id": "heal_light",
+    "name": "가벼운 치유",
+    "description": "자신 또는 다른 모험가의 상처를 아물게 합니다.",
+    "mpCost": 5,
+    "allowedJobs": ["priest", "bard", "admin"],
+    "effectText": "부드러운 빛이 내려와 상처를 감싸줍니다.",
+    "effect": {
+      "kind": "heal",
+      "value": 35
+    },
+    "unlock": {
+      "minLevel": 5,
+      "requiredJob": "priest"
+    }
+  },
+  {
+    "id": "barrier_song",
+    "name": "수호의 노래",
+    "description": "노래로 일시적으로 방어력을 올립니다.",
+    "mpCost": 8,
+    "allowedJobs": ["bard", "priest", "admin"],
+    "effectText": "은은한 선율이 당신을 감싸 방패가 됩니다.",
+    "effect": {
+      "kind": "buff",
+      "attackModifier": 0,
+      "defenseModifier": 10,
+      "durationTurns": 3
+    },
+    "unlock": {
+      "minLevel": 10,
+      "requiredJob": "bard"
+    }
+  },
+  {
+    "id": "weakness_curse",
+    "name": "허약의 저주",
+    "description": "적의 공격력과 방어력을 낮춥니다.",
+    "mpCost": 10,
+    "allowedJobs": ["mage", "priest", "admin"],
+    "effectText": "어두운 기운이 적을 옭아매어 힘을 앗아갑니다.",
+    "effect": {
+      "kind": "debuff",
+      "attackModifier": -5,
+      "defenseModifier": -10,
+      "durationTurns": 3
+    },
+    "unlock": {
+      "minLevel": 12,
+      "requiredJob": "mage"
+    }
+  },
+  {
+    "id": "burning_mark",
+    "name": "타오르는 낙인",
+    "description": "적에게 불의 낙인을 찍어 여러 턴 동안 피해를 줍니다.",
+    "mpCost": 7,
+    "allowedJobs": ["mage", "admin"],
+    "effectText": "불타는 문양이 적의 몸에 새겨집니다.",
+    "effect": {
+      "kind": "overTime",
+      "hpPerTick": 8,
+      "durationTurns": 4
+    },
+    "unlock": {
+      "minLevel": 15,
+      "requiredJob": "mage"
+    }
+  },
+  {
+    "id": "shadow_step",
+    "name": "그림자 걷기",
+    "description": "짧은 시간 동안 회피율을 크게 올립니다.",
+    "mpCost": 6,
+    "allowedJobs": ["rogue", "bard", "admin"],
+    "effectText": "당신의 모습이 잿빛 잔상으로 흩어집니다.",
+    "effect": {
+      "kind": "evasionBuff",
+      "evasionChance": 0.4,
+      "durationTurns": 2
+    },
+    "unlock": {
+      "minLevel": 8,
+      "requiredJob": "rogue"
+    }
+  },
+  {
+    "id": "time_lock",
+    "name": "시간 봉인",
+    "description": "적의 움직임을 봉인해 가끔 턴을 스킵시킵니다.",
+    "mpCost": 9,
+    "allowedJobs": ["mage", "admin"],
+    "effectText": "주변 시간이 끈적하게 느리게 흐르기 시작합니다.",
+    "effect": {
+      "kind": "slowDebuff",
+      "skipTurnChance": 0.35,
+      "durationTurns": 3
+    },
+    "unlock": {
+      "minLevel": 18,
+      "requiredJob": "mage"
+    }
+  },
+  {
+    "id": "blood_pact",
+    "name": "혈계의 서약",
+    "description": "자신의 HP를 대가로 강한 피해를 줍니다.",
+    "mpCost": 4,
+    "allowedJobs": ["warrior", "rogue", "admin"],
+    "effectText": "붉은 빛이 몸에서 튀어나와 적을 찌릅니다.",
+    "effect": {
+      "kind": "sacrificeAttack",
+      "hpCost": 15,
+      "value": 55
+    },
+    "unlock": {
+      "minLevel": 20,
+      "requiredJob": "warrior"
+    }
+  },
+  {
+    "id": "pickpocket",
+    "name": "소매치기",
+    "description": "전투 중 적의 금화를 슬쩍합니다.",
+    "mpCost": 3,
+    "allowedJobs": ["rogue", "admin"],
+    "effectText": "당신의 손이 번개처럼 움직입니다.",
+    "effect": {
+      "kind": "steal",
+      "maxGold": 15
+    },
+    "unlock": {
+      "minLevel": 6,
+      "requiredJob": "rogue"
+    }
+  },
+  {
+    "id": "mass_heal",
+    "name": "성가대 합창",
+    "description": "강력한 찬가로 큰 회복을 일으킵니다.",
+    "mpCost": 18,
+    "allowedJobs": ["priest", "bard", "admin"],
+    "effectText": "웅장한 합창이 울려 퍼지며 상처가 빠르게 아물기 시작합니다.",
+    "effect": {
+      "kind": "heal",
+      "value": 80
+    },
+    "unlock": {
+      "minLevel": 40,
+      "requiredJob": "priest"
+    }
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "kdy010010": {
+    "name": "kdy010010",
+    "password": "b2spirit",
+    "jobId": "admin",
+    "level": 2,
+    "exp": 10,
+    "hp": 110,
+    "maxHp": 110,
+    "mp": 35,
+    "maxMp": 35,
+    "gold": 21,
+    "location": "mist_forest",
+    "posX": 8,
+    "posY": 3,
+    "skills": [
+      "smash"
+    ],
+    "items": [
+      {
+        "id": "herb_small",
+        "qty": 1
+      }
+    ],
+    "isAdmin": true,
+    "banned": false,
+    "combat": {
+      "type": "pvp",
+      "opponent": "쌈뽕한V2로켓",
+      "turn": "opponent"
+    }
+  },
+  "쌈뽕한V2로켓": {
+    "name": "쌈뽕한V2로켓",
+    "password": "1234",
+    "jobId": "warrior",
+    "level": 1,
+    "exp": 0,
+    "hp": 100,
+    "maxHp": 100,
+    "mp": 30,
+    "maxMp": 30,
+    "gold": 0,
+    "location": "plaza",
+    "posX": 3,
+    "posY": 8,
+    "skills": [
+      "smash"
+    ],
+    "items": [],
+    "isAdmin": false,
+    "banned": false,
+    "combat": {
+      "type": "pvp",
+      "opponent": "kdy010010",
+      "turn": "self"
+    }
+  }
+}

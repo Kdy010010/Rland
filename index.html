@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>낭만의 땅 MUD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #050510;
+      color: #e0e0e0;
+      font-family: Consolas, "Courier New", monospace;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    #console {
+      flex: 1;
+      padding: 8px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: radial-gradient(circle at top, #202040 0, #050510 60%);
+      border-bottom: 1px solid #333;
+    }
+    .line {
+      margin-bottom: 4px;
+    }
+    .line.system {
+      color: #8888ff;
+    }
+    .line.input {
+      color: #aaaaaa;
+    }
+    #input-area {
+      display: flex;
+      padding: 6px;
+      background: #101020;
+      gap: 6px;
+    }
+    #prompt {
+      color: #44ff99;
+      padding-top: 6px;
+      font-size: 0.9rem;
+    }
+    #input {
+      flex: 1;
+      padding: 6px 8px;
+      border: 1px solid #444;
+      background: #050511;
+      color: #e0e0e0;
+      font-family: inherit;
+      font-size: 0.9rem;
+      border-radius: 3px;
+      outline: none;
+    }
+    #input:focus {
+      border-color: #44ff99;
+    }
+    #send-btn {
+      padding: 6px 10px;
+      border: 1px solid #44ff99;
+      background: #050511;
+      color: #44ff99;
+      border-radius: 3px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    #send-btn:active {
+      background: #0d1f1a;
+    }
+
+    /* 스크롤바 약간 꾸미기 */
+    #console::-webkit-scrollbar {
+      width: 8px;
+    }
+    #console::-webkit-scrollbar-thumb {
+      background: #444;
+    }
+    #console::-webkit-scrollbar-track {
+      background: #111;
+    }
+  </style>
+</head>
+<body>
+  <div id="console"></div>
+  <div id="input-area">
+    <div id="prompt">&gt;</div>
+    <input id="input" type="text" autocomplete="off" />
+    <button id="send-btn">입력</button>
+  </div>
+
+  <!-- socket.io 클라이언트 반드시 필요!! -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const consoleEl = document.getElementById('console');
+    const inputEl = document.getElementById('input');
+    const sendBtn = document.getElementById('send-btn');
+
+    const socket = io();
+
+    function scrollToBottom() {
+      consoleEl.scrollTop = consoleEl.scrollHeight;
+    }
+
+    function appendLine(text, cssClass, color) {
+      const lines = String(text).split('\n');
+      lines.forEach(line => {
+        const div = document.createElement('div');
+        div.className = 'line' + (cssClass ? ' ' + cssClass : '');
+        if (color) div.style.color = color;
+        div.textContent = line;
+        consoleEl.appendChild(div);
+      });
+      scrollToBottom();
+    }
+
+    // 서버 연결 시
+    socket.on('connect', () => {
+      appendLine('[시스템] 서버에 연결되었습니다.', 'system', '#8888ff');
+    });
+
+    socket.on('disconnect', () => {
+      appendLine('[시스템] 서버와의 연결이 끊어졌습니다.', 'system', '#ff6666');
+    });
+
+    // ★★★ server.js에서 emit 하는 console_output 받기 ★★★
+    socket.on('console_output', (data) => {
+      // data: { msg, color }
+      appendLine(data.msg, null, data.color || '#e0e0e0');
+    });
+
+    // 입력 보내기
+    function sendInput() {
+      const text = inputEl.value.trim();
+      if (!text) return;
+      // 내가 친 것도 콘솔에 한 줄 보여주고 싶으면 아래 줄 유지
+      appendLine('> ' + text, 'input', '#aaaaaa');
+      socket.emit('console_input', { text });
+      inputEl.value = '';
+      inputEl.focus();
+    }
+
+    // 엔터 키 처리 (PC, 모바일 키보드)
+    inputEl.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        sendInput();
+      }
+    });
+
+    // 버튼 클릭 (모바일 터치)
+    sendBtn.addEventListener('click', () => {
+      sendInput();
+    });
+
+    // 페이지 처음 로드 시 포커스
+    window.addEventListener('load', () => {
+      inputEl.focus();
+    });
+  </script>
+</body>
+</html>
