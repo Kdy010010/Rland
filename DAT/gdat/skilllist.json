@@ -165,5 +165,21 @@
       "minLevel": 40,
       "requiredJob": "priest"
     }
+  },
+    {
+    "id": "goldslash",
+    "name": "골든 슬래시",
+    "description": "힘을 모아 일격을 날린다",
+    "mpCost": 3,
+    "allowedJobs": ["admin"],
+    "effectText": "금빛의 무엇인가가 날라갑니다...",
+    "effect": {
+      "kind": "attack",
+      "value": 10000
+    },
+    "unlock": {
+      "minLevel": 1
+    }
   }
 ]
+
