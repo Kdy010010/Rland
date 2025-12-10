@@ -97,4 +97,12 @@
     "description": "살이 통통하게 오른 대구입니다.",
     "healAmount": 25
   }
+    {
+    "id": "7bs",
+    "name": "칠지도",
+    "type": "weapon",
+    "description": "운영자용 궁극의 무기",
+    "attackBonus": 1000000
+  }
 ]
+
